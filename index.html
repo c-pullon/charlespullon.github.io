@@ -1,3 +1,9 @@
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
     <head>
         <title>Charles Pullon Portfolio</title>
@@ -135,6 +141,22 @@
 
         <ul class="actions special">
             <li><a href="https://github.com/c-pullon/web_scraping_ML" target= "_blank" class="button">View Project</a></li>
+        </ul>
+    </article>
+
+	<article>
+        <header>
+            <h2><a href="https://github.com/c-pullon/Etsy_Web_Scraping_AWS_Redshift" target= "_blank">Etsy Product Data Pipeline</a></h2>
+        </header>
+        <a href="https://github.com/c-pullon/Etsy_Web_Scraping_AWS_Redshift" target= "_blank" class="image fit"><img src="images/logos6.png" alt="" /></a>
+        <ul style="text-align: left;">
+			<li>The goal of this project was to automate the process of gathering product information from Etsy, storing it in a structured format, and making it available for analysis in Amazon Redshift.</li>
+			<li>The Python script uses the requests library to send a GET request to the Etsy website and retrieves the HTML content. It then uses the BeautifulSoup library to parse the HTML and extract product names and prices from the webpage. Inspecting the HTML elements allowed identification of the specific tags and classes containing the desired product information. By analysing the structure of the webpage, the script was able to target the relevant elements.</li>
+			<li>After extracting product names and prices, the script cleans up the data by filtering out any unnecessary information, removes white space, formats the columns and converts data types.</li>
+			<li>The cleaned data is stored in a pandas DataFrame and then saved to a CSV file using the to_csv method. The script uses the boto3 library to interact with AWS S3. It uploads the CSV file containing the scraped data to a specific S3 bucket and folder.</li>
+			<li>After uploading the CSV file to S3, the data is then loaded into Redshift for analysis. This involves associating a role with Redshift to allow it to access the data in S3, creating a new table in Redshift to store the data, and using the COPY command to load the data from S3 into the Redshift table.</li>
+        <ul class="actions special">
+            <li><a href="https://github.com/c-pullon/Etsy_Web_Scraping_AWS_Redshift" target= "_blank" class="button">View Project</a></li>
         </ul>
     </article>
 </section>
