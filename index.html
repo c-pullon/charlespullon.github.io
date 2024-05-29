@@ -61,9 +61,9 @@
 			<li>Analysed online order data from an e-commerce platform, performing data loading, cleaning, and normalisation in SQL Server.</li>
 			<li>Established a normalised database schema with primary and foreign keys to ensure data integrity and eliminate redundancy.</li>
 			<li>Converted data types of columns before splitting the original dataset into five tables with unique identifiers generated for each record.</li>
-			<li>Performed queries including CTEs, stored procedures and subqueries to extract insights and guide analysis.</li> 
+			<li>Performed queries including CTEs, stored procedures and subqueries to extract insights and guide analysis.</li>
 			<li>Imported cleaned data into Power BI, creating an interactive report highlighting sales performance and customer behaviour patterns.</li>
-			<li>Implemented custom measures and slicers for time and country to analyse metric evolution across different regions.</li>
+            <li>Implemented custom measures and slicers for time and country to analyse metric evolution across different regions.</li>
 		</ul>
 		
 		
@@ -94,25 +94,6 @@
 
     <article>
         <header>
-            <h2><a href="https://github.com/c-pullon/ML-Wheat-Yield-Prediction" target= "_blank">Machine Learning in Python with ANN, LSTM and XGBoost</a></h2>
-        </header>
-        <a href="https://github.com/c-pullon/ML-Wheat-Yield-Prediction" target= "_blank" class="image fit"><img src="images/logos3.png" alt="" /></a>
-        <ul style="text-align: left;">
-			<li>Python is used to create three ML models: ANN, LSTM, and XGBoost, to predict wheat yields in five Australian states using yearly environmental data.</li>
-			<li>CSV files are loaded into Pandas DataFrames, merged and cleaned. Summary statistics are produced, and wheat yields are plotted over time. Correlation matrices and heatmaps used to understand relationships.</li>
-			<li>One-hot encoding is applied to 'Region' column, features are scaled using Min-Max scaling, and data is split into training and test sets based on a fixed year.</li>
-			<li>Feed-forward ANN is constructed and trained using Keras, experimenting with hidden layers, units, l2 regularisation, and dropout for optimal results.</li>
-			<li>LSTM model constructed and trained with manual hyperparameter tuning for optimal results.</li>
-			<li>XGBoost model is built with grid search and cross-validation for optimal hyperparameters, providing feature importance to overcome ML black-box problem.</li>
-		</ul>
-		
-        <ul class="actions special">
-            <li><a href="https://github.com/c-pullon/ML-Wheat-Yield-Prediction" target= "_blank" class="button">View Project</a></li>
-        </ul>
-    </article>
-
-    <article>
-        <header>
             <h2><a href="https://github.com/c-pullon/Bike_Stores_SQL_Power_BI" target= "_blank">Bike Store Data Analysis and Visualisation with SQL and Power BI</a></h2>
         </header>
         <a href="https://github.com/c-pullon/Bike_Stores_SQL_Power_BI" target= "_blank" class="image fit"><img src="images/logos4.png" alt="" /></a>
@@ -130,6 +111,44 @@
             <li><a href="https://github.com/c-pullon/Bike_Stores_SQL_Power_BI" target= "_blank" class="button">View Project</a></li>
         </ul>
     </article>
+
+    <article>
+        <header>
+            <h2><a href="https://github.com/c-pullon/Famous-Paintings-CSV-to-SQL" target= "_blank">Museum Data Integration and Analysis Using Excel, Python and SQL Server</a></h2>
+        </header>
+        <a href="https://github.com/c-pullon/Famous-Paintings-CSV-to-SQL" target= "_blank" class="image fit"><img src="images/logos_museum.png" alt="" /></a>
+        <ul style="text-align: left;">
+			<li>CSV files containing data about famous paintings, artists, and museums are uploaded to SQL server using SQL Alchemy in Python. Queries are then performed in SQL Server to analyse museum information.</li>
+			<li>The data is initially explored in Excel, where it is found that the opening and closing times in the museum_hours CSV file is formatted incorrectly. Power Query is utilised to convert these columns into appropriate time formats so they can be recognised by SQL. Using Power Query means that the formatting can be applied automatically to any new data introduced.</li>
+			<li>In Python, a connection to an SQL Server database is established using SQLAlchemy. The script iterates over a dictionary of the eight CSV files and their corresponding table names, reading each file into a Pandas DataFrame and uploading the data into the specified SQL tables. This Python script demonstrates the ease of moving data from CSV files into an SQL database.</li>
+			<li>In SQL Server, queries are performed to find museum details, museums open on certain days, and the museum with the longest opening hours.</li>
+            <li>Subqueries and stored procedures are utilised to improve the efficiency of the queries.</li>
+		</ul>
+		
+        <ul class="actions special">
+            <li><a href="https://github.com/c-pullon/Famous-Paintings-CSV-to-SQL" target= "_blank" class="button">View Project</a></li>
+        </ul>
+    </article>
+
+    <article>
+        <header>
+            <h2><a href="https://github.com/c-pullon/ML-Wheat-Yield-Prediction" target= "_blank">Machine Learning in Python with ANN, LSTM and XGBoost</a></h2>
+        </header>
+        <a href="https://github.com/c-pullon/ML-Wheat-Yield-Prediction" target= "_blank" class="image fit"><img src="images/logos3.png" alt="" /></a>
+        <ul style="text-align: left;">
+			<li>Python is used to create three ML models: ANN, LSTM, and XGBoost, to predict wheat yields in five Australian states using yearly environmental data.</li>
+			<li>CSV files are loaded into Pandas DataFrames, merged and cleaned. Summary statistics are produced, and wheat yields are plotted over time. Correlation matrices and heatmaps used to understand relationships.</li>
+			<li>One-hot encoding is applied to 'Region' column, features are scaled using Min-Max scaling, and data is split into training and test sets based on a fixed year.</li>
+			<li>Feed-forward ANN is constructed and trained using Keras, experimenting with hidden layers, units, l2 regularisation, and dropout for optimal results.</li>
+			<li>LSTM model constructed and trained with manual hyperparameter tuning for optimal results.</li>
+			<li>XGBoost model is built with grid search and cross-validation for optimal hyperparameters, providing feature importance to overcome ML black-box problem.</li>
+		</ul>
+		
+        <ul class="actions special">
+            <li><a href="https://github.com/c-pullon/ML-Wheat-Yield-Prediction" target= "_blank" class="button">View Project</a></li>
+        </ul>
+    </article>
+
 
     <article>
         <header>
@@ -154,7 +173,7 @@
         <a href="https://github.com/c-pullon/Excel_Coffee_Sales" target= "_blank" class="image fit"><img src="images/logos_coffee.png" alt="" /></a>
         <ul style="text-align: left;">
 			<li>In this project I used an Excel workbook with three sheets containing data about customers, orders and products of a coffee company to create an interactive dashboard of coffee sales.</li>
-			<li>I first joined relevant columns from the three sheets into one table by using XLOOKUP and index matching. I then created new columns using nested IF statements, and used number and date formatting to make existing columns clearer.</li>
+			<li>I first joined relevant columns from the three sheets into one table by using X-LOOKUP and index matching. I then created new columns using nested IF statements, and used number and date formatting to make existing columns clearer.</li>
             <li>I checked the resulting table for duplicates before creating pivot tables on key metrics including sales by coffee type over time, total sales by country, and top spending customers. Using these pivot tables I created line graphs, bar charts and column charts to highlight this information.</li>
             <li>Finally, I made a timeline and multiple slicers to alter the visualisations based on the date and other factors. All of these elements were brought together to make a clear, intuitive dashboard to highlight key information for stakeholders.</li> 
         <ul class="actions special">
@@ -162,21 +181,7 @@
         </ul>
     </article>
 
-	<article>
-        <header>
-            <h2><a href="https://github.com/c-pullon/Etsy_Web_Scraping_AWS_Redshift" target= "_blank">Etsy Product Data Pipeline</a></h2>
-        </header>
-        <a href="https://github.com/c-pullon/Etsy_Web_Scraping_AWS_Redshift" target= "_blank" class="image fit"><img src="images/logos6.png" alt="" /></a>
-        <ul style="text-align: left;">
-			<li>The goal of this project was to automate the process of gathering product information from Etsy, storing it in a structured format, and making it available for analysis in Amazon Redshift.</li>
-			<li>The Python script uses the requests library to send a GET request to the Etsy website and retrieves the HTML content. It then uses the BeautifulSoup library to parse the HTML and extract product names and prices from the webpage. Inspecting the HTML elements allowed identification of the specific tags and classes containing the desired product information. By analysing the structure of the webpage, the script was able to target the relevant elements.</li>
-			<li>After extracting product names and prices, the script cleans up the data by filtering out any unnecessary information, removes white space, formats the columns and converts data types.</li>
-			<li>The cleaned data is stored in a pandas DataFrame and then saved to a CSV file using the to_csv method. The script uses the boto3 library to interact with AWS S3. It uploads the CSV file containing the scraped data to a specific S3 bucket and folder.</li>
-			<li>After uploading the CSV file to S3, the data is then loaded into Redshift for analysis. This involves associating a role with Redshift to allow it to access the data in S3, creating a new table in Redshift to store the data, and using the COPY command to load the data from S3 into the Redshift table.</li>
-        <ul class="actions special">
-            <li><a href="https://github.com/c-pullon/Etsy_Web_Scraping_AWS_Redshift" target= "_blank" class="button">View Project</a></li>
-        </ul>
-    </article>
+	
 </section>
 
 <footer id="footer">
